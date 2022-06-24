@@ -1,0 +1,32 @@
+{
+  "name": "job_finder",
+  "version": "1.0.0",
+  "description": "Projeto de portal de anuncio de vagas de emprego. Este projeto foi desenvolvido durante o curso do Matheus Battisti de Javascript do basico ao avançado.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevHyago/JobFinder.git"
+  },
+  "keywords": [
+    "Portal-de-empregos",
+    "jobs",
+    "programador",
+    "javascript"
+  ],
+  "author": "Hyago Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevHyago/JobFinder/issues"
+  },
+  "homepage": "https://github.com/DevHyago/JobFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "sequelize": "^6.21.0",
+    "sqlite3": "^5.0.0"
+  }
+}
