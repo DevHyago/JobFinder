@@ -4,7 +4,7 @@
   "description": "Projeto de portal de anuncio de vagas de emprego. Este projeto foi desenvolvido durante o curso do Matheus Battisti de Javascript do basico ao avançado.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
