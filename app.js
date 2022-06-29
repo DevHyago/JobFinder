@@ -1,13 +1,13 @@
 const express = require('express');
-const db = require('./db/connection');
 const app = express();
+const db = require('./db/connection');
 
 const PORT = 3000;
 
 //DB CONNECTION
 db.authenticate()
     .then(() => {
-        console.log('Banco de dados conectato com sucessor');
+        console.log('Banco de dados conectato com sucesso');
     })
     .catch(error => {
         console.error('Erro ao conectar com banco de dados ', error);
@@ -20,6 +20,10 @@ app.get('/', function(req, res){
 });
 
 
-app.listen(PORT, function(){
-    console.log(`O Express está rodando na porta ${PORT}`);
+app.listen(PORT, function(error){
+    if(error){
+        console.error('Erro no servidor: ', error);
+    }else{
+        console.log(`O Express está rodando na porta ${PORT}`);
+    }
 });
